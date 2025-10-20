@@ -1,0 +1,29 @@
+{
+  "name": "worker-attendance-system",
+  "version": "1.0.0",
+  "description": "Complete Worker Attendance Management System - All in One Package",
+  "type": "module",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev", 
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "npm run install:all",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [
+    "attendance",
+    "management",
+    "react",
+    "nodejs",
+    "sqlite",
+    "factory",
+    "workers"
+  ],
+  "author": "Worker Attendance System",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
